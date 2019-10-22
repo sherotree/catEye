@@ -1,0 +1,42 @@
+/**index.wxss**/
+page {
+  height:100%;
+}
+.container {
+  color:white;
+  height:100;
+  width:100%;
+  display:flex;
+  margin-top:0;
+  overflow: hidden;
+}
+
+.row {
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  font-size:28rpx;
+  width:100%;
+  height:200rpx;
+  overflow: hidden;
+}
+
+.row:nth-child(odd) {
+  background:#87cefa;
+}
+.row:nth-child(even) {
+  background:#4169e1;
+}
+
+.title {
+  background: #7b68ee;
+  display:flex;
+  font-size:38rpx;
+  font-weight: bold;
+  width:100%;
+}
+
+.row > label {
+  flex:1;
+  text-align: center;
+}

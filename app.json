@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4169e1",
+    "navigationBarTitleText": "实时票房小助手",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh":true
+  },
+  "sitemapLocation": "sitemap.json"
+}
