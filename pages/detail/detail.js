@@ -1,15 +1,34 @@
 //logs.js
-const util = require('../../utils/util.js')
-
+//获取应用实例
+const app = getApp();
 Page({
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    logs: []
+    detail:{}
   },
-  onLoad: function () {
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
     this.setData({
-      logs: (wx.getStorageSync('logs') || []).map(log => {
-        return util.formatTime(new Date(log))
+      detail: app.globalData.detail
       })
-    })
+      console.log(options)
+      console.log(app.globalData.detail)
+  },
+
+
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+    return {
+      title: '票房速递'
+    }
   }
 })

@@ -1,11 +1,12 @@
 <!--index.wxml-->
-<view class='container'>
+<view class='wrapper'>
   <view class='title row'>
     <label>影片</label>
-    <label>总票房(万)</label>
+    <label>今日票房(万)</label>
     <label>票房占比</label>
   </view>
-  <view class='content row' wx:for="{{movies}}" data-detail="{{item}}" wx:key="{{item.movieId}}">
+  <view class='content row' wx:for="{{movies}}" data-detail="{{item}}" wx:key="{{item.movieId}}"
+  bindtap="goDetail">
     <label>{{item.movieName}}</label>
     <label>{{item.boxInfo}}</label>
     <label>{{item.boxRate}}</label>

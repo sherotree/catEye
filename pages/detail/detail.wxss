@@ -1,8 +1,69 @@
-.log-list {
+.wrapper {
+  display:flex;
+  flex-direction: column;
+  background:#6495ed;
+  height:100vh;
+  color:white;
+  align-items: center;
+  text-align: center;
+}
+
+#movieName {
+  margin-top:40rpx;
+  font-size:60rpx;
+  font-weight:bolder;
+}
+
+.totalInfo {
+  font-size:28rpx;
+  color: rgb(201, 201, 201);
+  margin-bottom: 300rpx;
+}
+
+#sumBoxInfo {
+  margin-top:30rpx;
+  color:#ffa07a;
+  font-size:46rpx;
+  font-weight:bold;
+}
+
+.middle {
+  display: flex;
+  flex-direction:column;
+  font-size: 28rpx;
+}
+
+#realTimeBox {
+  color:#ffa07a;
+  font-size:46rpx;
+  font-weight:bold;
+}
+
+.footer {
+  font-size:28rpx;
+  color: rgb(201, 201, 201);
+  display: flex;
+  justify-content: space-around;
+  margin-top:300rpx;
+  width:100%;
+}
+
+.otherInfo {
   display: flex;
   flex-direction: column;
-  padding: 40rpx;
 }
-.log-item {
-  margin: 10rpx;
+
+#showInfo, #avgShowView {
+  color:white;
+  font-size: 35rpx;
+  font-weight:bold;
 }
+
+
+
+
+
+
+
+
+
