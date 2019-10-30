@@ -8,6 +8,6 @@
 
 ### 真机效果
 
-![list](./screenshot/list.jpeg)
+<img src="./screenshot/list.jpeg" width="200px">
 
-![list](./screenshot/detail.jpeg)
+<img src="./screenshot/detail.jpeg" width="200px">
