@@ -7,8 +7,8 @@
   </view>
   <view class='content row' wx:for="{{movies}}" data-detail="{{item}}" wx:key="{{item.movieId}}"
   bindtap="goDetail">
-    <label>{{item.movieName}}</label>
-    <label>{{item.boxInfo}}</label>
+    <label>{{item.movieInfo.movieName}}</label>
+    <label>{{item.boxSplitUnit.num}}</label>
     <label>{{item.boxRate}}</label>
   </view>
 </view>

@@ -19,10 +19,11 @@ Page({
   onLoad: function () {
     const that = this;
     wx.request({
-      url: 'https://piaofang.maoyan.com/second-box',
+      url: 'http://piaofang.maoyan.com/dashboard-ajax/movie',
       success(res) {
+        console.log(res)
         that.setData({
-          movies:res.data.data.list,
+          movies: res.data.movieList.list,
         });
       },
     })
@@ -32,10 +33,10 @@ Page({
     const that = this;
     app.globalData.timeId = setInterval(() => {
       wx.request({
-      url:'https://piaofang.maoyan.com/second-box',
+      url:'http://piaofang.maoyan.com/dashboard-ajax/movie',
       success(res) {
         that.setData({
-          movies:res.data.data.list,
+          movies:res.data.movieList.list,
         });
       }
       })
@@ -49,10 +50,10 @@ Page({
   onPullDownRefresh: function() {
     const that = this;
     wx.request({
-      url: 'https://piaofang.maoyan.com/second-box',
+      url: 'http://piaofang.maoyan.com/dashboard-ajax/movie',
       success(res) {
         that.setData({
-          movies:res.data.data.list
+          movies:res.data.movieList.list
         })
       }
     })

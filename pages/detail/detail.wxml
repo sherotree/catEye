@@ -2,24 +2,24 @@
 <view class='wrapper'>
   <view class='header'>
     <view id='movieName'>
-    {{detail.movieName}}
+    {{detail.movieInfo.movieName}}
     </view>
     <view class='totalInfo'>
-      <view id='relaseInfo'>{{detail.releaseInfo}}
-      </view> 
-      <view id='sumBoxInfo'>总票房{{detail.sumBoxInfo}}</view>
+      <!-- <view id='relaseInfo'>{{detail.releaseInfo}}
+      </view>  -->
+      <view id='sumBoxInfo'>总票房{{detail.sumBoxDesc}}</view>
     </view>
   </view>
   <view class='middle'>
     <label>今日实时票房</label>
-    <label id='realTimeBox'>{{detail.splitBoxInfo}}万</label>
+    <label id='realTimeBox'>{{detail.boxSplitUnit.num}}万</label>
     <label id='boxRate'>票房占比{{detail.boxRate}}</label>
   </view>
   <view class='footer'>
     <view class='fLeft otherInfo'>
       <label>排片场次</label>
-      <label id='showInfo'>{{detail.showInfo}}</label>
-      <label>排片占比{{detail.showRate}}</label>
+      <label id='showInfo'>{{detail.showCount}}</label>
+      <label>排片占比{{detail.showCountRate}}</label>
     </view>
     <view class='fRight otherInfo'>
       <label>场均人次</label>

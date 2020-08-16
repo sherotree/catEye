@@ -24,10 +24,10 @@ page {
 }
 
 .row:nth-child(odd) {
-  background:#87cefa;
+  background:rgba(69,68,84,0.4);
 }
 .row:nth-child(even) {
-  background:#4169e1;
+  background:rgba(55,54,67,0.9) ;
 }
 
 .title {
