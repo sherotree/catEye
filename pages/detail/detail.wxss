@@ -1,7 +1,7 @@
 .wrapper {
   display:flex;
   flex-direction: column;
-  background:#6495ed;
+  background:#373743;
   height:100vh;
   color:white;
   align-items: center;

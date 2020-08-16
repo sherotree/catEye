@@ -5,7 +5,7 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#373643",
+    "navigationBarBackgroundColor": "#373743",
     "navigationBarTitleText": "票房速递",
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh":true
